@@ -1,8 +1,3 @@
-body {
-  background: #e5e5e5;
-  font-family: Roboto;
-}
-
 :root {
   --brand-color: #2e2f42;
   --primary-color: #434455;
@@ -10,39 +5,69 @@ body {
   --nice-color: #f4f4fd;
   --light-color: #e7e9fc;
 }
+body {
+  font-family: Roboto, Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info:active,
+.info:focus {
+  color: var(--second-color);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-color);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--brand-color);
+}
 .logo {
   font-family: Raleway;
   font-size: 18px;
   line-height: 1.3;
   text-decoration: none;
   color: var(--brand-color);
-  word-spacing: -0.25rem;
+  letter-spacing: -0.1rem;
 }
 
-address {
-  font-size: 16px;
-  line-height: 1.5;
+.info {
   color: var(--primary-color);
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
-.first {
+.first,
+.ended {
   background-color: var(--brand-color);
 }
 
 button {
   font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
   color: var(--second-color);
   border-radius: 4%;
   background-color: var(--nice-color);
-  border-color: var(--light-color);
 }
 
 button:hover {
@@ -54,33 +79,28 @@ button:hover {
 li {
   list-style-type: none;
 }
-h3 {
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--brand-color);
-}
 
 p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 400;
   color: var(--primary-color);
 }
-footer {
-  background-color: var(--brand-color);
+.team {
+  text-align: center;
+  background-color: #d9d9d9;
 }
 
-footer .logo {
+.ended .logo {
   font-family: Raleway;
   font-size: 18px;
   line-height: 1.3;
   text-decoration: none;
   color: var(--nice-color);
-  word-spacing: -0.25rem;
+  letter-spacing: -0.1rem;
 }
 
 .web {
   color: var(--second-color);
 }
-footer p {
+.ended .idea {
   color: var(--light-color);
 }
