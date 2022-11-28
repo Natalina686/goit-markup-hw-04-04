@@ -18,8 +18,15 @@ a {
   font-weight: 400;
 }
 
+.info:hover,
+a:hover {
+  color: var(--primary-color);
+}
+
 .info:active,
-.info:focus {
+.info:focus,
+a:active,
+a:focus {
   color: var(--second-color);
 }
 
@@ -52,10 +59,11 @@ h3 {
   line-height: 1.3;
   text-decoration: none;
   color: var(--brand-color);
-  letter-spacing: -0.1rem;
+  letter-spacing: 0.02em;
 }
 
 .info {
+  font-family: inherit;
   color: var(--primary-color);
 }
 
@@ -64,17 +72,28 @@ h3 {
   background-color: var(--brand-color);
 }
 
-button {
-  font-family: inherit;
+.first-button {
+  padding: 16px, 32px;
+  width: 170px;
+  height: 51px;
   text-align: center;
-  color: var(--second-color);
+  color: white;
   border-radius: 4%;
-  background-color: var(--nice-color);
+  background-color: var(--second-color);
+  font-size: 16px;
+  line-height: 1.2;
 }
 
-button:hover {
-  color: var(--nice-color);
-  background-color: var(--second-color);
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: var(--second-color);
+  background-color: var(--nice-color);
   cursor: pointer;
 }
 
