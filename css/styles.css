@@ -7,7 +7,7 @@
   --background-color: #d9d9d9;
 }
 body {
-  font-family: Roboto, Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -55,7 +55,7 @@ h3 {
   color: var(--brand-color);
 }
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 1.3;
   text-decoration: none;
@@ -85,7 +85,7 @@ h3 {
   line-height: 1.2;
 }
 
-.button {
+.main-button {
   font-weight: 600;
   font-size: 16px;
   border: none;
@@ -98,7 +98,12 @@ button:focus {
   cursor: pointer;
 }
 
-li {
+.about-our-work,
+.menu,
+.main-button,
+.works-photos,
+.services,
+.our-photos {
   list-style-type: none;
 }
 
@@ -108,16 +113,16 @@ p {
 }
 .team {
   text-align: center;
-  background-color: var(--background-color);
+  background-color: var(--nice-color);
 }
 
 .ended .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 1.3;
   text-decoration: none;
   color: var(--nice-color);
-  letter-spacing: -0.1rem;
+  letter-spacing: 0.02em;
 }
 
 .web {
@@ -125,4 +130,10 @@ p {
 }
 .ended .idea {
   color: var(--light-color);
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
 }
