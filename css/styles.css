@@ -85,10 +85,19 @@ h3 {
   line-height: 1.2;
 }
 
-.main-button {
+.main-button button {
+  width: 88px;
+  height: 24px;
+  color: var(--second-color);
   font-weight: 600;
   font-size: 16px;
   border: none;
+  border-radius: 4px;
+  padding: 8px, 16px, 8px, 16px;
+}
+.main-button button:hover {
+  background-color: var(--second-color);
+  color: white;
 }
 
 button:hover,
@@ -107,7 +116,7 @@ button:focus {
   list-style-type: none;
 }
 
-p {
+.main-content {
   font-weight: 400;
   color: var(--primary-color);
 }
