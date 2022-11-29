@@ -21,6 +21,7 @@ a {
 .info:hover,
 a:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .info:active,
