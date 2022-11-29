@@ -83,12 +83,14 @@ h3 {
   background-color: var(--second-color);
   font-size: 16px;
   line-height: 1.2;
+  cursor: pointer;
 }
 
 .main-button button {
   width: 88px;
   height: 24px;
   color: var(--second-color);
+  background-color: var(--nice-color);
   font-weight: 600;
   font-size: 16px;
   border: none;
@@ -98,12 +100,6 @@ h3 {
 .main-button button:hover {
   background-color: var(--second-color);
   color: white;
-}
-
-button:hover,
-button:focus {
-  color: var(--second-color);
-  background-color: var(--nice-color);
   cursor: pointer;
 }
 
