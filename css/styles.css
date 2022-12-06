@@ -12,6 +12,50 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  width: 1440px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -31,12 +75,17 @@ a:focus {
   color: var(--second-color);
 }
 
+.header-menu {
+  display: flex;
+}
+
 h1 {
   font-weight: 600;
   font-size: 56px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-top: 192px;
 }
 
 h2 {
@@ -61,6 +110,13 @@ h3 {
   text-decoration: none;
   color: var(--brand-color);
   letter-spacing: 0.02em;
+  display: block;
+
+  align-items: center;
+}
+.wrapper .logo {
+  margin-left: 156px;
+  margin-right: 77px;
 }
 
 .info {
@@ -70,20 +126,26 @@ h3 {
 
 .first,
 .ended {
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--brand-color);
 }
 
 .first-button {
-  padding: 16px, 32px;
+  margin-top: 48px;
+  margin-bottom: 192px;
+  align-self: center;
+  padding: 16px, 32px, 16px, 32px;
   width: 170px;
   height: 51px;
   text-align: center;
   color: white;
   border-radius: 4%;
+  border-color: var(--second-color);
   background-color: var(--second-color);
   font-size: 16px;
   line-height: 1.2;
-  cursor: pointer;
 }
 
 .main-button button {
@@ -112,6 +174,71 @@ h3 {
   list-style-type: none;
 }
 
+.about-our-work:last-child {
+  margin-right: 0;
+}
+
+.about-our-work > .about-work {
+  padding-bottom: 120px;
+  padding-top: 120px;
+  width: 264px;
+  margin: 24px;
+}
+
+.about-our-work {
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.services li {
+  margin-right: 24px;
+}
+
+.services li:last-child {
+  margin-right: 0;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.our-photos {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.our-photos li {
+  width: 264px;
+  margin-right: 24px;
+}
+
+.our-photos li:last-child {
+  margin-right: 0;
+}
+
+.our-photos .main-content {
+  margin-bottom: 32px;
+}
+
+.name {
+  margin-top: 32px;
+}
+
+.our-work {
+  width: 1128px;
+  display: flex;
+  align-items: center;
+}
 .main-content {
   font-weight: 400;
   color: var(--primary-color);
@@ -135,6 +262,28 @@ h3 {
 }
 .ended .idea {
   color: var(--light-color);
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  padding: 24px 0;
+  margin: 0 40px 0 0;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.address {
+  display: flex;
+}
+
+.address .info:first-child {
+  margin-right: 40px;
 }
 
 .navigation {
