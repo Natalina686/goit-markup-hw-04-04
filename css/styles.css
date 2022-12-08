@@ -12,20 +12,6 @@ body {
   line-height: 1.5;
 }
 
-.container {
-  width: 1440px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 h1,
 h2,
 h3,
@@ -35,6 +21,7 @@ p {
 }
 
 ul {
+  list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -65,7 +52,6 @@ a {
 .info:hover,
 a:hover {
   color: var(--primary-color);
-  cursor: pointer;
 }
 
 .info:active,
@@ -75,8 +61,14 @@ a:focus {
   color: var(--second-color);
 }
 
-.header-menu {
+.container {
+  width: 1128px;
+  margin: auto;
+}
+
+.menu {
   display: flex;
+  justify-content: space-between;
 }
 
 h1 {
@@ -103,6 +95,13 @@ h3 {
   line-height: 1.2;
   color: var(--brand-color);
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -110,21 +109,30 @@ h3 {
   text-decoration: none;
   color: var(--brand-color);
   letter-spacing: 0.02em;
-  display: block;
-
-  align-items: center;
 }
-.wrapper {
-  margin-right: 156px;
+.menu {
+  margin-left: 0;
+}
+.menu li {
+  padding: 24px 0;
+  margin: 0 40px 0 0;
 }
 
-.wrapper .logo {
-  margin-left: 156px;
-  padding-right: 77px;
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.address .info:first-child {
+  margin-right: 40px;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .info {
-  font-family: inherit;
   color: var(--primary-color);
 }
 
@@ -137,10 +145,12 @@ h3 {
 }
 
 .first-button {
+  margin: 0 auto;
+  display: block;
   margin-top: 48px;
   margin-bottom: 192px;
-  align-self: center;
-  padding: 16px, 32px, 16px, 32px;
+
+  padding: 16px 32px 16px 32px;
   width: 170px;
   height: 51px;
   text-align: center;
@@ -190,15 +200,6 @@ h3 {
   cursor: pointer;
 }
 
-.about-our-work,
-.menu,
-.main-button,
-.works-photos,
-.services,
-.our-photos {
-  list-style-type: none;
-}
-
 .about-our-work:last-child {
   margin-right: 0;
 }
@@ -236,7 +237,6 @@ h3 {
 }
 
 .our-photos {
-  width: 1440px;
   margin-top: 72px;
   display: flex;
   justify-content: center;
@@ -286,45 +286,16 @@ h3 {
   color: var(--second-color);
 }
 .ended .idea {
+  width: 264px;
   margin-top: 16px;
   color: var(--light-color);
-}
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu li {
-  padding: 24px 0;
-  margin: 0 40px 0 0;
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.address {
-  display: flex;
-}
-
-.address .info:first-child {
-  margin-right: 40px;
-}
-
-.navigation {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 600;
 }
 
 .name {
   margin-bottom: 8px;
 }
 
-.container-footer {
-  width: 264px;
-  margin-left: 156px;
+.ended .container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
