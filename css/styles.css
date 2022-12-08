@@ -96,6 +96,11 @@ h3 {
   color: var(--brand-color);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -109,7 +114,15 @@ h3 {
   text-decoration: none;
   color: var(--brand-color);
   letter-spacing: 0.02em;
+  display: block;
+  margin-right: 77px;
 }
+.logo-menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 .menu {
   margin-left: 0;
 }
@@ -139,7 +152,6 @@ h3 {
 .first,
 .ended {
   display: flex;
-  flex-direction: column;
 
   background-color: var(--brand-color);
 }
@@ -205,7 +217,6 @@ h3 {
 }
 
 .about-our-work > .about-work {
-  padding-bottom: 120px;
   padding-top: 120px;
   width: 264px;
   margin: 24px;
@@ -234,12 +245,13 @@ h3 {
 .team {
   padding-top: 120px;
   padding-bottom: 72px;
+  background-color: var(--nice-color);
 }
 
 .our-photos {
-  margin-top: 72px;
   display: flex;
   justify-content: center;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -253,7 +265,6 @@ h3 {
 }
 
 .our-work {
-  width: 1128px;
   display: flex;
   align-items: center;
 }
@@ -261,11 +272,6 @@ h3 {
   font-weight: 400;
   color: var(--primary-color);
   text-align: left;
-}
-
-.team {
-  text-align: center;
-  background-color: var(--nice-color);
 }
 
 .photo-card {
