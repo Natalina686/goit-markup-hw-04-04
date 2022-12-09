@@ -185,6 +185,9 @@ header {
   line-height: 1.2;
 }
 
+.contain {
+  margin-bottom: 72px;
+}
 .main-button {
   margin-top: -24px;
   display: flex;
