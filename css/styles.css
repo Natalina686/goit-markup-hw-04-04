@@ -212,7 +212,13 @@ header {
 
 .works-photos li {
   margin-right: 24px;
+  margin-top: 72px;
 }
+
+.works-photos li::nth-child(-n + 3) {
+  margin-top: 0;
+}
+
 .works-photos li:nth-child(n + 7) {
   margin-bottom: 0;
 }
@@ -223,7 +229,6 @@ header {
 
 .works-photos img {
   width: 360px;
-  margin-top: 72px;
 }
 
 .main-button button {
