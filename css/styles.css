@@ -193,6 +193,7 @@ header {
   display: flex;
   justify-content: center;
   padding-left: 0;
+  margin-bottom: 72px;
 }
 
 .main-button li {
@@ -215,7 +216,7 @@ header {
   margin-top: 72px;
 }
 
-.works-photos li::nth-child(-n + 3) {
+.works-photos li:nth-child(-n + 3) {
   margin-top: 0;
 }
 
